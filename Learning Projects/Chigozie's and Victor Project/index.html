@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <title>Classwork</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+   <section id="banner">
+<header>
+    <h1><span>CHI</span>GOZIE</h1>
+   <nav>
+    <div id="openbar" onclick="openMenu()">
+      <div class="bar"></div>
+    </div>
+    <ul id="ul">
+    <div class="fa fa-times" onclick="closeMenu()"></div>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#works">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+   </nav>
+   </header>
+   <h1 class="log">Welcome To<br><span class="icon"> My Portfolio.</span><br>My name is Chigozie</h1>
+</section> 
+<section id="about">
+<article class="container">
+    <div class="row">
+        <div class="col1">
+            <img src="img/alexa-hand-on-hair.png" alt="">
+        </div>
+        <div class="col2">
+            <h1 class="header">ABOUT ME</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab illo aliquam quam asperiores laborum.</p>
+    <div class="skill"><i class="fa-solid fa-right-to-bracket"></i>
+        <h2>Skills</h2> 
+        <p>Lorem ipsum</p>
+       <p>Lorem ipsum</p> 
+      <p>Lorem ipsum</p> 
+   </div>
+<div class="experience"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+    <h2>Experience</h2> 
+    <p>Lorem ipsum</p>
+    <p>Lorem ipsum</p>
+    <p>Lorem ipsum</p>  
+</div>
+
+<div class="edu"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+    <h2>Education</h2> 
+    <p>Lorem ipsum</p> 
+    <p>Lorem ipsum</p>
+    <p>Lorem ipsum</p>
+ </div>
+</div>
+ <a class="cv" download href="CSS Note.pdf">Download Cv</a>
+</div>
+    </div> 
+</article>
+</section>
+<section id="services">
+    <div class="container">
+        <h1 class="sectiontitle">My Services</h1>
+        <div class="row">
+            <article class="col1">
+                <i class="fas fa-pen"></i>
+                <h2>Web Design</h2>
+                <p>We are best in this field</p>
+        </article>
+            <article class="col2">
+                <i class="fa fa-pen-to-square"></i>
+                <h2>Graphic Design</h2>
+                <p>We are best in this field</p></article>
+            <article class="col3">
+                    <i class="fa fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>We are best in this field</p></article>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="works">
+    <div class="container">
+        <h1 class="sectiontitle">Recent Works</h1>
+        <div class="row">
+            <article class="col1">
+                <img class="shot2" src="img/strategic58.png" alt=""></article>
+                <article class="col2">
+                <img class="shot3"src="img/use3.png" alt=""></article>
+    </div>
+</div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <article class="col1"> 
+                <h2 class="sectiontitle">Contact Info</h2>
+                <p class="param"><i class="fa fa-phone"></i>08133867042</p>
+                <p class="param"><i class="fa fa-envelope"></i>goziemayjane56<span class="mail">@</span>gmail.com</p>
+                <p class="param"><a href="m.me/maryjanegozzy.raymond" target="_blank"><i class="fab fa-facebook"></a></i><a href="m.me/chigozie.onwuasor"><i class="fab fa-linkedin"></a></i><a href="m.me/gozzy.maryjane"><i class="fab fa-twitter"></i></a></p>
+            </article>
+                <article class="col2">
+<form action="">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="E-mail">
+    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+    <button type="submit">Submit</button>
+</form>
+  </article>   
+ </div>
+ </div>
+</section>
+<footer>
+    <p>Copyright &#169;Onwuasor Chigozie 2022</p>
+</footer>
+<script>
+    const openbar = document.getElementById("openbar");
+    const closebar = document.getElementById("closebar");
+    const mobileMenu = document.getElementById('ul');
+    function openMenu(){
+        mobileMenu.style.right = '0px';
+        openbar.style.visibility = 'hidden';
+    }
+    function closeMenu(){
+        mobileMenu.style.right = '-200px';
+        openbar.style.visibility = 'visible';
+    }
+</script>
+</body>
+</html>
