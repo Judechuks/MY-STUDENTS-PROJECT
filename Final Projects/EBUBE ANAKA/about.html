@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+<style>
+    *{
+        margin: 0;
+    }
+   
+#banner{
+    background-image:  linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.88)),url(../background.jpg);
+    height: 40vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+     h1 span{
+        color: goldenrod;
+    }
+    #banner h1{
+    text-align: center;
+    }
+    #banner{
+    width: 100%;
+    /* position: absolute; */
+    text-align: center;
+    color: rgb(99, 96, 96);
+    padding-top: 40px;
+   
+}
+
+#banner h1{
+    font-size: 70px;
+    margin-top: 20px ;
+
+}
+
+#banner span{
+     color: goldenrod;
+}
+
+#banner p{
+    margin: 20px auto;
+     font-weight: 100;
+     line-height: 25px;
+}
+
+.branch{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    /* margin-top: 60px; */
+}
+.branch-col{
+    /* padding-top: 60px; */
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+}
+ .branch-col img{
+    width: 100%;
+    height: 200%;
+    display: block;
+ } 
+.branch{
+flex-basis: 30% ;
+background-color: rgba(202, 198, 198, 0.658);
+/* border-radius: 5px; */
+padding: 10px 127px;
+background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(pictures/banner\ 2.webp) ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.branch p{
+   color: #f8f2f2;
+}
+.branch span{
+    color: goldenrod;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 00.5s;
+}
+.layer:hover{
+background:rgba(0, 0, 0, 0.849);
+}
+.layer h3, p{
+    width: 100%;
+    font-weight: 500%;
+    color: black;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition:0.5s;
+}
+.layer:hover h3, .layer:hover p{
+    bottom:2%;
+    opacity:1;
+    color: white;
+    font-weight: 800;
+}
+
+#branch-img{
+    height: 300px;
+    /* margin-top: 70px; */
+}
+</style>
+
+</head>
+<body>
+  <div id="banner">
+    <h1><span> EDUCATION</span> IS THE KEY TO UNLOCKING A NEW WORLD</h1>
+         <P>KNOWLEDGE IS POWER</P>
+  </div>
+  <section class="branch">
+    <h1 style="padding-top: 10px; padding-bottom: 10px;"><span>ABOUT US</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, excepturi.</p>
+    <div class="row">
+        <div class="branch-col">
+            <img id="branch-img" src="pictures/school image.jpg" alt="">
+            <div class="layer">
+                
+                <p>
+                    Marvel learning academy has been in existence for ten school years. Beginning in 2012-2013, the school reached out to the local community and Fort Benning to establish supportive and meaningful Partners-in-Education. As a result,Marvel learning academy has developed strong relationships with WestRock, Inc., Marco's Pizza-Fort Mitchell, Subway-Fort Mitchell, Chester's Barbecue, and Mount Olive Baptist Church. Partners in Education support the school by being visible at school activities, being guest readers in classes, serving as judges for school contests such as door decorations during Red Ribbon and Read Across nigeria Weeks, and providing financial support, materials and supplies, and human resources. The school has a parent-teacher organization called Cub Parenting Organization (C.P.O.). C.P.O. is open to all parents of students at Marvel learning academy. 
+                </p>
+            </div>
+        </div>
+         
+        </div>
+        
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

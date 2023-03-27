@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up</title>
+<style>
+body{
+  background-color: #002447; 
+  position: relative;
+}
+main{
+  width: 90vw;
+  height: 90vh;
+  background-image: url(../images/person-passing-through-a-location.jpg);
+  position: absolute;
+  left: 60px;
+  top: 25px;
+  position: relative;
+}
+
+fieldset{
+  background-color: rgba(0, 0, 0, 0.94);
+  width: 40%;
+  position: absolute;
+  left: 345px;
+  top: 70px;
+  text-align: center;
+  color: whitesmoke;
+  border-color: black;
+  box-shadow: -2px 2px 4px ;
+}
+h1{
+  font-size: 3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.input{
+  width: 350px;
+  height: 25px;
+  margin-top: 25px;
+  border-radius: 15px;
+  border-color: whitesmoke;
+  border: none;
+}
+#pword{
+  margin-bottom: 30px;
+}
+.input:hover{
+    transform: translateY(-2px);
+    border:2px solid #e966de;
+    outline: 0;
+    -webkit-box-shadow: inset 10px rgba(0,0,0,.075), 0 0 8px rgba(232, 49, 202, 0.6);
+    box-shadow: inset 10px rgba(0,0,0,.075), 0 0 8px rgba(232, 49, 202, 0.6);
+}
+button{
+  width: 150px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: #e966de;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+button:hover{
+  cursor: pointer;
+  transform: scale(1.04);
+}
+#secondU{
+  color: #e966de;
+}
+</style>
+
+</head>
+<body>
+  <main>
+      <div>
+        <form acti-on="">
+          <fieldset>
+          <h1> <u id="firstU">Sign</u> <u id="secondU">Up</u></h1>
+          <input class="input" type="text"  placeholder="Name:">
+          <br>
+          <input class="input" type="email" placeholder="Email:">
+          <br>
+          <input id="pword" class="input"  type="password" placeholder="Password:">
+          <br>
+          <input id="terms" type="checkbox"> <label for="terms">I have read all the terms and conditions</label>
+          <br>
+          <button>SUBMIT</button>
+          <p>Already have an account? <a href="">Sign in</a></p>
+          </fieldset>
+        </form>
+      </div>
+  </main>
+</body>
+</html>
