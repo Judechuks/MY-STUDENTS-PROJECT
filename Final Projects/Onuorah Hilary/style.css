@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: whitesmoke;
+}
+
+
+/* <========== header ==========> */
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    box-shadow: 3px 0 5px black;
+}
+header h1 span{
+    color: gold;
+    margin-left: 2rem;
+}
+header h1{
+    font-size: 2.5rem;
+}
+header nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2.8rem;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding-left: 12px;
+    font-size: 1.3rem;
+}
+header a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: gold;
+    transition-duration: 0.8s;
+}
+header a:hover::after{
+    width: 100%;
+}
+
+
+/* <=========== banner ==========> */
+
+#banner{
+   background-color: rgb(245, 219, 72);
+   min-height: 80vh;
+   display: flex; 
+   justify-content: space-between;
+}
+#banner .art-1 p{
+    font-size: 3rem;
+    line-height: 3em;
+    text-align: center;
+    padding-top: 8rem;
+}
+#banner .art-1 span{
+    color: white;
+    font-size: 4rem;
+}
+#banner .art-2 div{
+    width: 37.5rem;
+    height: 100%;
+}
+#banner .art-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* <=========== about ==========> */
+
+
+#about{
+    margin-top: 100px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+#about .art-1 h2,#about .art-3 h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: serif;
+    padding-bottom: 30px;
+}
+#about .art-2, #about .art-4{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+#about .art-2 .img-container,#about .art-4 .img-container{
+    flex-basis: 45%;
+}
+#about .art-2 div,#about .art-4 div{
+    flex-basis: 50%;
+}
+
+#about .art-2 div img,#about .art-4 div img{
+    width: 100%;
+    height: 100%;
+}
+#about .art-2 p,#about .art-4 p{
+    font-size: 1.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* <========== services ==========> */
+
+
+#services{
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f0eaea; 
+}
+#services .art-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding-bottom: 30px;
+}
+#services h2{
+    grid-column: span 3;
+    text-align: center;
+    font-size: 3rem;
+    font-family: serif;
+    padding-bottom: 50px;
+    padding-top: 35px;
+}
+#services .art-1 div{
+    width: 21.88rem;
+    height: 21.88rem;
+}
+#services .art-1 div img{
+    width: 100%;
+    height: 100%;
+}
+#services .art-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-bottom: 100px; 
+}
+#services .art-2 div{
+    width: 600px;
+}
+#services .art-2 .fas{
+    font-size: 3rem;
+    padding-bottom: 35px;
+    padding-left: 80px;
+}
+#services .art-2 h3{
+    font-size: 1.8rem;
+    padding-bottom: 25px;
+}
+
+/* <========== contact ==========> */
+
+#contact{
+   margin-top: 100px; 
+   margin-bottom: 100px; 
+}
+#contact .art-1 h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: serif;
+    padding-bottom: 50px; 
+}
+#contact .art-1 p{
+    font-size: 1.5rem;
+}
+#contact .art-1 p span{
+    font-size: 2rem;
+    padding-right: 15px;
+    padding-left: 200px;
+}
+#contact .art-2 h2{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 2rem;
+    font-family: serif;
+    padding-top: 50px; 
+    padding-bottom: 70px; 
+}
+#contact input,textarea{
+    width: 80%;
+    padding: 10px;
+    margin-left: 9rem;
+    border: none;
+    background-color: #f0eaea;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+#contact input::placeholder,textarea::placeholder{
+    color: gray;
+}
+#contact button{
+    display: block;
+    padding: 8px 40px;
+    margin-left: 9rem;
+    background: gold;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 5px;
+}
+#contact .col-2 .fas, #contact .col-2 .fab{
+    font-size: 1.8rem;
+    color: gold;
+    margin-right: 15px;
+    padding-bottom: 40px;
+}
+#contact .social-network a{
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+}
+#contact .col-2 p{
+    font-size: 1.3rem;
+    display: flex;
+}
+
+/* <========= footer ==========> */
+
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: gold;
+  }
+  footer h2{
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+  footer a{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+footer .fab{
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: 1.5s;
+}
+footer .fab:hover{
+  transform: translateY(-10px);
+  color: gray;
+}
+footer .fa{
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+
+/* <========== media queries ==========> */
+
+
+@media screen and (max-width: 1024px){
+    #banner{
+        min-height: 45vh;
+    }
+    #banner .art-1 p{
+        line-height: 1.5em;
+    } 
+    #about .art-2 div,#about .art-4 div{
+        align-items : center;
+        margin: auto;
+        flex-basis: 100%!important;
+    }
+    #contact input,textarea{
+        margin-left: 7rem;
+    }
+    #contact button{
+        margin-left: 7rem;
+    }
+    }
+
+    @media screen and (max-width: 800px){
+        #banner{
+            flex-direction: column;
+        }
+        #banner .art-2 div{
+            width: 100%;
+            /* height: 650px; */
+        }
+        #services .art-2 .fas{
+            padding-left: 3.3rem;
+        }
+        #contact .art-1 p span{
+            padding-left: 100px;
+        }
+        #contact input,textarea{
+            margin-left: 5rem;
+        }
+        #contact button{
+            margin-left: 5rem;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+
+        header nav .hamburger{
+            outline: 2px solid black;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            position: relative;
+            right: 25px;
+            z-index: 5;
+            
+        }
+        header nav .bar{
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            border-radius: 2px;
+        }
+        header nav .bar::before,
+        header nav .bar::after{
+            content: "";
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: inherit;
+            border-radius: 2px;
+        }
+        header nav .bar::before{
+            transform: translateY(-7px);
+        }
+        header nav .bar::after{
+            transform: translateY(4px);
+        }
+        header nav ul{
+            display: grid;
+            position: fixed;
+            top: 0;
+            right: -70%;
+            width: 70%;
+            height: 100vh;
+            background-color: rgb(245, 219, 72);
+            transition: 0.8s;
+            place-content: center;
+            text-align: center;
+            gap: 40px;
+        }
+        header nav:hover ul{
+            right: 0;
+        }
+
+        #services .art-2{
+            flex-direction: column;
+            flex-basis: 100%;
+            /* width: 200px; */
+            /* justify-self: center; */
+        }
+        #services .art-2 div{
+            width: 300px;
+            margin: auto;
+        }
+        #contact .art-1 p span{
+            padding-left: 50px;
+            font-size: 1.5rem;
+        }
+        #contact input,textarea{
+            margin-left: 3rem;
+        }
+        #contact button{
+            margin-left: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 420px){
+        #about .art-1 h2,#about .art-3 h2{
+            font-size: 2rem;
+        }
+        #services h2{
+            font-size: 2rem;
+        }
+        #services .art-2 h3{
+            font-size: 1.3rem;
+        }
+        
+        #contact .art-1 h2{
+            font-size: 2rem;
+        }
+        #contact .art-2 h2{
+            font-size: 1rem; 
+        }
+        #about .art-2 p,#about .art-4 p{
+            font-size: 1.3rem;
+        }
+        #contact input,textarea{
+            margin-left: 1rem;
+        }
+        #contact button{
+            margin-left: 1rem;
+        }
+        #contact .art-1 p{
+           font-size: 1rem;
+        }
+        #contact .art-1 p span{
+            padding-left: 20px;
+            font-size: 1rem;
+        }
+    }
