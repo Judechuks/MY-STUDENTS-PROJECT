@@ -45,7 +45,7 @@ header nav a{
 header a::after{
     content: "";
     display: block;
-    width: 0%;
+    width: 0%; 
     height: 3px;
     background-color: gold;
     transition-duration: 0.8s;
