@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fast delivery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image:url(healthy.jpg);
+background-repeat:center;
+        }
+        form{
+            padding: 15px;
+            border-radius: 30px;
+            margin-top: 35px;
+            margin-left: 20%;
+            margin-right:35%;
+            width: 60%;
+            height: 100%;
+            background-image: url(prawn.jpg);
+            background-size: 100%;
+        }
+        h1{
+            font-style:italic;
+            font-weight:lighter;
+            font-family: sans-serif;
+            color: midnightblue;
+            margin-bottom: 15px;
+        }
+        span{
+            color: rgb(33, 214, 20);
+        }
+        label:nth-child(1){
+            font-family: sans-serif;
+            font-weight: bold;
+            color: midnightblue;
+        }
+        /* balancing the pickup with delivery label with the input type of radio */
+        #pick{
+            margin-left: 14%;
+        }
+        /* colour for the date input */
+        #pickdel{
+            background:linear-gradient(rgb(15, 178, 190),
+            rgb(174, 245, 10),
+            rgb(118, 12, 240));
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        /* gave the input a border radius*/
+        input{
+            border-radius: 5px;
+        }
+/* increasing the input size for name */
+#name{
+    padding: 5px;
+    margin-right: 20px;
+}
+/*increasing the 2nd input text space */
+#nam{
+    padding: 5px;
+}
+/* 1st input text for number */
+#number{
+    padding: 5px;
+    margin-right: 20px;
+}
+/* 2nd input text for number */
+#numbe{
+    padding: 5px;
+}
+/* increasing the input size for Email */
+        #mail{
+            padding: 5px;
+        }
+        label{
+            font-family: sans-serif;
+            color: midnightblue;
+            font-weight: bold;
+        }
+        /* increasing the input size for Address */
+        #address{
+            padding: 5px;
+        }
+
+        h3{
+            font-weight: bold;
+            font-family: cursive;
+            font-size: 19px;
+        }
+        select{
+            color: black;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        option{
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        /* the notice */
+        .nb{
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        button{
+            margin-top: 20px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            background:linear-gradient(pink,
+            maroon,yellow,rgb(121, 9, 141),rgb(9, 9, 244)) ;
+        }
+        /* media query for screen that has the maximum screen size of 1024px */
+        @media screen and (max-width:1024px) {
+            #pick{
+margin-left: 14.45%;
+            }
+            form{
+        margin-top: 20%;
+        width: 95%;
+        margin-left: 28px;
+            }
+            label{
+                font-size: 20px;
+            }
+            input{
+                font-size: 20px;
+            }
+            select{
+                font-size: 20px;
+            }
+            h3{
+                font-size: 18px;
+            }
+            .nb{
+font-size: 20px;
+            }
+        }
+         /* media query for screen that has the maximum screen size of 1000px */
+        @media  screen and (max-width:1000px) {
+            #pick{
+                margin-left: 17.8%;
+            }
+            form{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width:800px){
+            #pick{
+                margin-left: 43.5%;
+            }
+            /* give a margin top */
+            #pickdel{
+                margin-top: 5px;
+            }
+            form{
+                height: 130vh;
+                padding: 10%;
+                padding-left: 5%;
+                width:50%;
+                margin-left:20%;
+                margin-bottom: 30px;
+            }
+            #custom{
+                margin-top: 20px;
+            }
+            h2{
+                margin-top: 20px;
+            }
+            /* salad area in form */
+#lads{
+    margin-top: 10px;
+}
+            #toppings{
+                margin-top: 5px;
+            }
+            #adult{
+margin-left: 10px;
+            }
+            /* cookie area in form */
+            #cook{
+                margin-top: 20px;
+            }
+            /* bread area in form */
+            #bread{
+            margin-top: 20px;
+            }
+            #loaf{
+                margin-top:30px;
+            }
+            /* smoothie section */
+            #can{
+                margin-top: 30px;
+            }
+            #Qty{
+                margin-top: 30px;
+            }
+            #typesm{
+                margin-top: 10px;
+            }
+            #smoothiecan{
+                margin-top: 10px;
+            }
+            /* note */
+            .nb{
+                margin-top:30px ;
+            }
+            /* button section */
+            button{
+                margin-top: 20px;
+            }
+        }
+        /* media query for screen that has the maximum screen size of 500px  */
+            @media screen and (max-width:500px){
+               #pick{
+                margin-left:43% ;
+               } 
+               form{
+                height: 100%;
+                width: 80%;
+                margin-top: 5%;
+                margin-left: 10px;
+               }
+            }
+            @media screen and (max-width:400px){
+                form{
+                    margin-left: 35px;
+                }
+              label{
+                font-size: 15px;
+              } 
+              h3{
+                font-size: 15px;
+              } 
+              input{
+                font-size: 10px;
+              }
+              select{
+                font-size: 10px;
+              }
+            }
+        
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/mayzlldw" method="POST">
+        <h1>Ranma <span>Discover</span> Menu</h1>
+        <p><label for="order">Type of order:</label>
+        <input name="pick" id="delivery" type="radio">
+    <label for="Delivery">Delivery</label></p>
+<p><input name="pick" id="pick" type="radio">
+<label for="pick">Pickup</label></p>
+<p><label for="pickup" id="pickde">Pick-up/Delivery Date</label></p>
+<input type="date" name="pickdel" id="pickdel">
+        <p><label for="name">Customer Name</label></p>
+        <p><input id="name" name="name" type="text">
+        <input id="nam" name="name" type="text"></p>
+        <label for="number">Phone Number</label>
+        <p><input id="number" name="number" type="text">
+        <input id="numbe" type="text"></p>
+        <label for="mail">Email</label>
+        <p><input type="email" id="mail" required:must be a valid email address></p>
+        <p><label for="address" id="customer">Customer's Address</label></p>
+        <input type="text" name="address" id="address">
+        <h2>Make your orders</h2>
+        <h3 id="lads">Salads $12.00</h3>
+        <p><input type="checkbox">
+        <label for="salad">Salad</label></p>
+        <label for="Q">Quantity</label>
+        <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <label for="salad">Salad</label>
+    <select name="" id="salad">
+        <option value="brocoli">Brocoli</option>
+        <option value="tuna">Tuna</option>
+        <option value="Salmon">Salmon</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Caprese">Caprese</option>
+        <option value="Greek">Greek</option>
+        <option value="Meditterranean Chicken">Meditterranean Chicken</option>
+        <option value="Shrimp,Asparagus & Avocado">Shrimp,Asparagus & Avocado</option>
+        <option value="Salmon Avocado">Salmon Avocado</option>
+        <option value="Cobb">Cobb</option>
+        <option value="Easy Fruit">Easy Fruit</option>
+    </select>
+    <label for="dressing" id="top">Toppings</label>
+    <select name="toppings" id="toppings">
+        <option value="Olive Oil">Olive Oil</option>
+        <option value="Sesame Oil">Sesame Oil</option>
+        <option value="Soy Sauce">Soy Sauce</option>
+        <option value="Vinegar">Vinegar</option>
+        <option value="Greek Yogurt">Greek Yogurt</option>
+        <option value="Lime Juice">Lime Juice</option>
+        <option value="Pepper">Pepper</option>
+        <option value="Honey">Honey</option>
+        <option value="Lemon Juice">Lemon Juice</option>
+    </select>
+    <label for="size" id="adult">Size</label>
+<select name="size" id="size">
+    <option value="Adult size">Adult Size</option>
+    <option value="Kids size">Kids size</option>
+</select>
+<h3 id="cook">Cookie $10.00</h3>
+<p><input type="checkbox" name="cookie" id="cookie">
+<label for="cookie">Cookies</label></p>
+<label for="quantity">Quantity</label>
+<select>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+</select>
+<label for="cookie">Cookie</label>
+<select name="cookie" id="cookie">
+    <option value="Paleo Lemon">Paleo Lemon</option>
+    <option value="Coconut Butter">Coconut Butter</option>
+    <option value="Almond butter">Almond butter</option>
+    <option value="Zucchini Oatmeal">Zucchini Oatmeal Breakfast</option>
+    <option value="Oatmeal Peanut Butter Cookie Bars">Oatmeal Peanut Butter Cookie Bars</option>
+    <option value="Mokonut's Rye-Cranberry">Mokonut's Rye-Cranberry</option>
+    <option value="No Flour Peanut Butter Sandwiches">No Flour Peanut Butter Sandwiches</option>
+    <option value="Honey Cinnamon">Honey Cinnamon</option>
+</select>
+<label for="type">Type</label>
+<select name="typecookies" id="typecookies">
+    <option value="Truffles">Truffles</option>
+    <option value="Drop">Drop</option>
+    <option value="Meatballs">Meatballs</option>
+    <option value="Cupcakes">Cupcakes</option>
+    <option value="Muffins">Muffins</option>
+</select>
+<label for="size">Size</label>
+<select name="size" id="palate">
+    <option value="3">3</option>
+    <option value="6">6</option>
+    <option value="9">9</option>
+    <option value="12">12</option>
+</select>
+<h3 id="bread">Bread $5.09</h3>
+<p><input type="checkbox" name="" id="">
+<label for="bread">Bread</label></p>
+<label for="Quantity">Quantity</label>
+<select name="" id="Quantity">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+</select>
+<label for="type" id="loaf">Types</label>
+<select name="breadtype" id="breadtype">
+<option value="Whole Wheat">Whole Wheat </option>
+<option value="Rye">Rye</option>
+<option value="Multigrain">Multigrain</option>
+<option value="Sprouted">Sprouted</option>
+<option value="Sourdough">Sourdough</option>
+<option value="Flax">Flax</option>
+<option value="Oat">Oat</option>
+<option value="Gluten-free">Gluten-free</option>
+<option value="Millet">Millet</option>
+<option value="Sprouted">Sprouted</option>
+</select>
+<h3 id="can">Smoothie $8.00</h3>
+<input type="checkbox" name="smoothie" id="smoothie">
+<label for="smoothie">Smoothie</label>
+<p><label for="quantity" id="Qty">Quantity</label>
+<select name="" id="Quantity">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+</select>
+<label for="type" id="typesm">Type</label>
+<select name="typesmoo" id="typesmoo">
+    <option value="typesmoo">Chocolate Keto Protein Shake</option>
+    <option value="keto">Keto</option>
+    <option value="Blueberry">Blueberry</option>
+    <option value="Best-ever Acai Bowl">Best-ever Acai Bowl</option>
+    <option value="Perfect green">Perfect green</option>
+    <option value="Easy Banana">Easy Banana</option>
+    <option value="Triple berry">Triple berry</option>
+    <option value="Superfruit">Superfruit</option>
+    <option value="Peanut butter & jelly">Peanut butter & jelly</option>
+    <option value="Cantaloupe Breakfast bowl">Cantaloupe Breakfast bowl</option>
+</select>
+<label for="size">Size</label>
+<select name="smoothiecan" id="smoothiecan">
+    <option value="9oz/270ml">9oz/270ml</option>
+    <option value="12oz/360ml">12oz/360ml</option>
+    <option value="16oz/480ml">16oz/480ml</option>
+    <option value="20oz/600ml">20oz/600ml</option>
+</select>
+</p>
+<p class="nb">N:B:The size of the container requires extra fee........</p>
+<center><button type="submit">Submit</button></center>
+    </form>
+</body>
+</html> 
