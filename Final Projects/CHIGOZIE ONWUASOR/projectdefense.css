@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+
+}
+/* headersection */
+header{
+    width: 100%;
+    min-height:90px;
+    background-color: aliceblue;
+    display: flex;
+    /* justify-content:center; */
+    align-items: center;
+}
+header a .fab{
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    color: black;
+    overflow: hidden;
+    z-index: 1;
+    /* transform: rotateY(360deg); */
+    /* text-decoration: underline; */
+    transition: 2s;
+}
+/* inclusiontransition */
+header a .fab:hover{
+    color:black;
+    border-radius:50%;
+    border: 3px dotted black;
+    transform:scale(1.5);
+    /* background-color:black; */
+}
+ header #skype:hover{
+    background-color:skyblue;
+}
+header #facebook:hover{
+    background: #3b5999;
+    color: white;
+}
+header #twitter:hover{
+    background:#55acee ;
+}
+header #link:hover{
+    background: #0077b5;
+}
+header #google:hover{
+    background: #dd4b39;
+}
+header #pinterest:hover{
+    color: white;
+    background-color:darkred ;
+}
+span{
+    color: brown;
+    font-size:25px;
+}
+.fa-solid{
+    margin-left: 30%;
+}
+header img{
+    position: relative;
+    left: 25%;
+    width: 39px;
+    border-radius:50%;
+    padding-right: 5px;
+}
+header h3{
+    font-size: 18px;
+    font-family:cursive;
+    font-weight: light;
+/* text-align: center; */
+margin-left: 25%;
+margin-bottom: 10px;
+margin-top: 0;
+}
+#icon p{
+    display: none;
+    /* transition: 3s; */
+    /* background-image: url(photos/img/Vegetable-salad-icon-illustration.png); */
+}
+.fas{
+    margin-left: 15px;
+    display: block;
+}
+#icon:hover p{
+    cursor: pointer;
+    color: rgb(228, 22, 22);
+    display:block;
+    /* transition: 3s; */
+}
+/* mainsection */
+main img:nth-child(1){
+    /* display: none; */
+width: 100%;
+height: 400px;
+/* margin-left: 15px; */
+transition: 2s;
+}
+
+.col1{
+    grid-column: span 3;
+    width: 100%;
+    /* padding: 10px; */
+    position: relative;
+    transition: 2s;
+    
+}
+.col1 p{
+    opacity: 0;
+    transition: 2s;
+    position: absolute;
+    top: 100%;
+    color:rgb(49, 20, 128);
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    /* left:-100% ; */
+    text-align: center;
+    /* margin-top: 50px; */
+}
+.col1:hover img{
+ transform: rotateX(90deg);
+ 
+}
+.col1:hover p{
+   opacity: 1; 
+    top: 5px;
+    transition: 4s;
+    left: 10px;
+    background: url(istockphoto-1168915938-612x612.jpg);
+    background-repeat:repeat;
+    /* top: 0; */
+    width: 100%;
+    height:100%;
+}
+main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 25px;
+     /* justify-content: center; */
+}
+main img:nth-child(2),img:nth-child(3),img:nth-child(4){
+    display: block;
+    width: 100%;
+    /* margin-top: 10px; */
+}
+.col2{
+    padding-left: 10px;
+/* width: 100%; */
+position: relative;
+grid-column:span 1;
+transition: 2s;
+}
+.col2 p{
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    color:rgb(49, 20, 128);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: url(9e9324a6c484449d46f18d5ce5f4a2c4.jpg);
+    /* border-radius: 4px none black; */
+}
+.col2:hover img{
+    transform:rotateY(90deg) ;
+
+}
+.col2:hover p{
+opacity: 1;
+top: 10%;
+left: 0%;
+transition: 3s;
+}
+.col3{
+    position: relative;
+}
+.col3 p{
+    position: absolute;
+    opacity: 0;
+    bottom: 50%;
+    color:white;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.col3:hover img{
+    transform: rotate(360deg);
+}
+.col3:hover p{
+    opacity: 1;
+    bottom: 10%;
+    transition: 3s;
+}
+.col4{
+    padding-right: 10px;
+    position: relative;
+}
+.col4 p{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    color:black;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-image:url(69187619.webp);
+    width: 100%;
+    height: 100%;
+}
+.col4:hover img{
+    transform:rotateX(270deg);
+}
+.col4:hover p{
+    opacity: 1;
+    bottom: 60%;
+    transition: 5s;
+}
+/* section section */
+section{
+    width: 100%;
+    /* opacity: 0; */
+    height: 100vh;
+    background: linear-gradient(180deg,
+    rgb(185, 9, 9),
+    rgb(223, 9, 123),
+    rgb(220, 252, 36),
+    rgb(213, 240, 135) );
+   margin-top: 30px;
+   position: relative;
+}
+
+section div  h4{
+    opacity: 0;
+}
+section div a{
+    text-decoration: none;
+    color: black;
+}
+section div{
+    width: 300px;
+    /* height: 200px; */
+    position: absolute;
+    right: 0px;
+    bottom: 30%;
+}
+section div img{
+   width: 100%;
+border:none;
+transition: 4s;
+}
+section div img:hover{
+   transform:rotate(360deg);
+}
+ .fa-clock{
+    color: red;
+    border-radius: 50%;
+    border: 2px dotted black;
+}
+section div:hover  h4{
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* position: relative; */
+    border-radius:30px 0 30px 0;
+    background-color:rgba(187, 17, 45, 0.843);
+    /* left: 60%; */
+    opacity: 1;
+    width: 200px;
+}
+section h3{
+    padding-top: 15%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+section span{
+    font-size: 40px;
+    color: red;
+}
+/* footer section */
+h2{
+    margin-left: 47%;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+form{
+    margin-left: 30%;
+    margin-top: 10px;
+}
+input:nth-child(1){
+    width: 60%;
+    padding-bottom:10px;
+}
+#mail{
+    margin-top: 10px;
+}
+textarea{
+    width: 60%;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+button{
+    margin-left: 20%;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color:dodgerblue;
+    margin-top: 10px;
+    color:white;
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+}
+button a{
+text-decoration: none;
+}
+@media  screen and(min-width:1000px) {
+    section div img{
+        width: 200px;
+    }  
+}
+@media screen and (max-width: 850px){
+    .col,.col2,.col3{
+        overflow-x: hidden;
+    }
+    section{
+        height: fit-content;
+    }
+    section div {
+        position: relative;
+margin-top: 20px;
+        width:210px;
+    }
+    /* header section query */
+    header img{
+        position: relative;
+        left: 5%;
+    }
+    header h3{
+        margin-left: 5%;
+    }
+    .fa-solid{
+        margin-left: 20%;
+    }
+    .fas{
+        margin-left: 20px;
+    }
+    /* main section query */
+    .col1 p{
+        font-size: 20px;
+    }
+    .col2{
+        grid-column: span 3;
+    }
+    .col2 p{
+      height: 350px;  
+      font-size: 30px;
+    }
+    .col3 p{
+       color: white; 
+    }
+}
+    @media screen and (max-width:600px) {
+        /* header section query */
+        .fa-solid{
+margin-left: 2%;
+        }
+        header .fab:nth-child(1):hover{
+            margin-left: 0;
+        }
+        /* main section query */
+        .col1 p{
+            font-size: 20px;
+        }
+        .col2{
+            grid-column: span 3;
+        }
+        .col2 p{
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        .col3{
+            grid-column: span 3;
+        }
+        .col4{
+            grid-column: span 3;
+        }
+        .col4 p{
+            font-size: 25.8px;
+            /* margin-top: 5%; */
+        }
+}
+@media screen and (max-width:500px){
+    .col1,.col2,.col3{
+        overflow-x: hidden;
+       }
+    /* header query */
+    header img{
+        margin-top: -30px;
+    }
+    header h3{
+        margin-top: -30px;
+    }
+    header a .fab{
+        margin-left: 0;
+position: absolute;
+top: 60px;
+    }
+    header #facebook{
+        margin-left: 15%;
+    }
+    header #twitter{
+        margin-left:25%;
+    }
+    header #link{
+        margin-left:35%;
+    }
+    header #google{
+        margin-left: 45%;
+    }
+    header #skype{
+        margin-left:50% ;
+    }
+    header #pinterest{
+        margin-left:60%;
+    }
+    .fa-solid{
+        margin-left:30%;
+    }
+    /*main section query  */
+    span{
+        font-size: 20px;
+    }
+    .col1{
+        font-size: 20px;
+    }
+    .col2:hover p{
+        font-size: 20px;
+/* height:800px; */
+    }
+    .col3 p{
+        font-size: 20px;
+        margin-top: 5%;
+    }
+    .col4 p{
+        font-size: 20px;
+    }
+     /* footersection */
+     form{
+        margin-top: 15px;
+        margin-left: 25%;
+     }
+     h2{
+        font-size: 20px;
+        margin-left: 35%;
+    }
+    #mail{
+        margin-top: 13px;
+    }
+    textarea{
+        margin-top: 20px;
+    }
+    button{
+        margin-left: 5%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px
+    }
+}
+@media screen and (max-width:300px) {
+.col1,.col2,.col3{
+    overflow-x: hidden;
+   }
+    /* main section */
+    .col1:hover p{
+        height: 400px;
+    }
+    span{
+        font-size: 15px;
+    }
+    /* change the fontsize to be smaller to be able for it accomodate */
+    .col1 p{
+        font-weight: bold;
+font-size: 15px;
+    }
+    .col2 p{
+        margin-top: -15px;
+        font-size: 20px;
+    }
+    .col3 p{
+        width: 100%;
+    }
+    .col4 p{
+        font-size: 20px;
+    }
+    /* footersection */
+    form{
+        margin-left: 35%;
+    }
+    h2{
+        font-size: 20px;
+        margin-left: 35%;
+    }
+    button{
+        margin-left: 5%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px
+    }
+}
