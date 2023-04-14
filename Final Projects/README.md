@@ -13,6 +13,7 @@ The Students which project are found here are:
 **1. Igwegbe Victor Lotana** 
 **2. Anaka Ebube**
 **3. Onuorah Hilary**
+**4. Chigozie Onwuasor**
 
 ## PROJECTS
 The above student carried out the following projects:
@@ -20,6 +21,7 @@ The above student carried out the following projects:
 ### 1. Travel Tour Site
 ### 2. School Site
 ### 3. Cosmestics Site
+### 4. Recipe/Restaurant Site
 
 ## TECHNOLOGIES / LANGUAGES
 This project was developed using 
