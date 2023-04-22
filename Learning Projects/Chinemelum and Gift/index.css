@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ============HELPS TO MAKE IT SCROLL================ */
+html{
+    scroll-behavior: smooth;
+}
+
+/* =======HEADER======= */
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    padding: 10px 0px;
+    align-items: center;
+}
+span{
+    color: greenyellow;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 1.2rem;
+    position: sticky;
+}
+nav .fa{
+    font-size: 1.8rem;
+    display: none;
+}
+nav a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: greenyellow;
+    transition: 1s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    color: white;
+}
+/* ========BANNER======== */
+#banner{
+    width: 100%;
+    min-height: 70vh;
+    background:linear-gradient(rgba(110, 231, 110,0.5), rgba(110, 231, 110, 0.5)), url(image/strategic58.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#banner h1{
+    padding-top: 100px;
+    font-size: 2.5rem;
+}
+#banner p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 700px;
+    margin: 20px auto;
+}
+#banner a{
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 20px 40px;
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+}
+
+/* =========PRODUCTS========== */
+
+#products{
+    text-align: center;
+    padding: 40px;
+}
+#products h1{
+    margin-bottom: 40px;
+}
+.products-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.products-container article{
+      flex-basis: 25%;      
+}
+.products-container article h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.products-container article p{
+    max-width: 150px;
+    margin: auto;
+}
+.products-container div{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    background-color: green;
+    padding: 20px;
+    margin: auto;
+}
+article i.fa-star{
+     font-size: 3rem;
+     color: greenyellow ;
+}
+
+/* ========ABOUT======== */
+
+#about{
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(192, 222, 223);
+}
+#about div{
+    flex-basis: 30%;
+}
+#about div p{
+    max-width: 200px;
+    margin-top: 20px;
+}
+#about img{
+    width: 100%;
+}
+
+/* =========REVIEW======== */
+
+#review{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+#review .client-img{
+    flex-basis: 15%;
+}
+#review img{
+    width: 100%;
+    border-radius: 50%;
+}
+#review .client-words{
+    flex-basis: 30%;
+}
+
+/* ========FOOTER======= */
+
+#subscribe{
+    background-color: greenyellow;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+#subscribe input{
+    background-color: greenyellow;
+    border: 1px solid white ;
+    padding: 10px;
+    width: 300px;
+    border-radius: 2px;
+}
+#subscribe button{
+    color: yellowgreen;
+    background-color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 2px;
+    margin-left: 10px;
+    width: 100px;
+    align-self: center;
+}
+#info{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+.company{
+     max-width: 180px;
+}
+.company p{
+    margin-top: 10px;
+}
+.quick ul{
+     list-style-type: none;
+     margin-top: 10px;
+}
+.quick a{
+    color: black;
+}
+.cus p{
+     margin-top: 10px;
+}
+.cus i{
+    margin-top: 10px;
+}
+.copyrights{
+    background-color: black;   
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+.copyrights p{
+    color: white;
+    font-size: 0.8rem;
+}
+.icons a{
+    color: black;
+    font-size: 1.2rem;
+}
+.icons .fab{
+    transition: 1s;
+}
+.icons .fab:hover{
+    transform: translateY(-10px);
+}
+/* ===============MEDIA QUERY============== */
+@media screen and (max-width: 640px) {
+         nav .fa{
+             display: block;
+         }
+         nav ul{
+             display: grid;
+             width: 50%;
+             background-color: grey;
+             position: fixed;
+             right: -55%;
+             top: 0;
+             height: 100vh;
+             justify-content: center;
+             align-content: center;
+             text-align: center;
+             gap: 100px;
+             transition: 1s;
+         }
+         nav:hover ul{
+             right: 0;
+         } 
+}
+@media screen and (max-width: 510px) {
+    .products-container{
+      display: grid;
+    }
+    #about{
+       flex-direction:column ;
+       padding-left: 70px;
+       padding-right: 70px;
+       gap: 20px;
+       text-align: center;
+    }
+    #review{
+        flex-direction: column;
+        text-align: center;
+    }
+    #info{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:300px) {
+    header h1{
+        font-size: 1.6rem;
+    }
+    #banner a{
+        margin-bottom: 30px;
+    }
+    #subscribe{
+        flex-direction: column;
+    }
+    #subscribe input{
+        width: 200px;
+    }
+
+}
+/* ================================================================================================= */
+
