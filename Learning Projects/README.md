@@ -1,4 +1,4 @@
-# FINAL PROJECT
+# LEARNING PROJECT
 These projects are projects developed by my students at **EDUFUN TECHNIK STEM HUB** From **December, 2022** 
 Instructed and guilded by me; **Monye Jude**
 These projects were a practical approach for them on how to build a project using the fundamental Web Frontend Language.  
@@ -8,9 +8,11 @@ Taught by **Monye Jude**
 The Students whose learning project are found here are:
 
 **1. Igwegbe Victor Lotana** 
-**2. Onwuasor Chigozie** 
+**1. Onwuasor Chigozie** 
 **2. Anaka Ebube**
 **3. Onuorah Hilary**
+**4. Enekweizu Chinemelum**
+**4. Gift**
 
 ## PROJECTS
 The student developed the following projects:
@@ -18,6 +20,7 @@ The student developed the following projects:
 ### 1. Jaytube project
 ### 2. Personal Portfolio
 ### 3. Fashion site
+### 4. Product site
 
 ## TECHNOLOGIES / LANGUAGES
 These projects were developed using 
