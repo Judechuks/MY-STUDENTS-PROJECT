@@ -13,6 +13,9 @@ The Students whose learning project are found here are:
 **3. Onuorah Hilary**
 **4. Enekweizu Chinemelum**
 **4. Gift**
+**5. Favor ifunanya**
+**5. Adachukwu**
+**5. James**
 
 ## PROJECTS
 The student developed the following projects:
@@ -21,6 +24,7 @@ The student developed the following projects:
 ### 2. Personal Portfolio
 ### 3. Fashion site
 ### 4. Product site
+### 5. Transport site
 
 ## TECHNOLOGIES / LANGUAGES
 These projects were developed using 
