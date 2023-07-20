@@ -13,9 +13,11 @@ The Students whose learning project are found here are:
 **3. Onuorah Hilary**
 **4. Enekweizu Chinemelum**
 **4. Gift**
-**5. Favor ifunanya**
+**5. Favor Ifunanya**
 **5. Adachukwu**
 **5. James**
+**6. Henry**
+**6. Somkene**
 
 ## PROJECTS
 The student developed the following projects:
