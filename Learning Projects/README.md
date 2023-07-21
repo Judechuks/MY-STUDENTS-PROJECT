@@ -16,7 +16,7 @@ The Students whose learning project are found here are:
 **5. Favor Ifunanya**
 **5. Adachukwu**
 **5. James**
-**6. Henry**
+**6. Chukwuowah Henry**
 **6. Somkene**
 
 ## PROJECTS
