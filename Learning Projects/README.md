@@ -27,6 +27,7 @@ The student developed the following projects:
 ### 3. Fashion site
 ### 4. Product site
 ### 5. Transport site
+### 6. Business Growth site
 
 ## TECHNOLOGIES / LANGUAGES
 These projects were developed using 
