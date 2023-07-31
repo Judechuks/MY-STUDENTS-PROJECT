@@ -1,0 +1,171 @@
+/* Reset */
+/*======== RESET =========*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+.btn{
+  width: fit-content;
+  background-color: rgb(0, 131, 116);
+  color: white;
+  border-radius: 30px;
+  padding: 15px 36px;
+  font-size: 1.2rem;
+}
+.social a{
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: inline-block;
+  color: #ddd;
+}
+.social i{
+  font-size: 1.2rem;
+}
+.brand{
+  font-size: 2rem;
+  font-weight: bold;
+}
+body{
+  font-family: sans-serif;
+}
+
+/*======== HEADER =========*/
+header{
+  background-color: rgb(0, 131, 116);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+header li{
+  display: inline-block;
+  margin-left: 20px;
+}
+header a{
+  color: white;
+  font-size: 1.2rem;
+}
+header li::after{
+  content: "";
+  display: block;
+  width: 0%;
+  background-color: #f55;
+  height: 2px;
+  margin-top: 5px;
+  transition: 1s;
+}
+header li:hover::after{
+  width: 100%;
+}
+
+/*======== HERO =========*/
+#hero{
+  background-color: rgb(0, 131, 116);
+  display: flex;
+  padding: 40px;
+  align-items: center;
+}
+#hero h1{
+  font-size: 3rem;
+  color: white;
+}
+#hero p{
+  color: #ccc;
+  margin: 30px 0;
+  max-width: 80%;
+}
+#hero .btn{
+  border: 1px solid #aaa;
+  background-color: rgb(41, 139, 128);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/*======== ABOUT =========*/
+#about{
+  padding: 20px 100px;
+}
+section > h1{
+  text-align: center;
+  font-size: 2.2rem;
+}
+section > h1::after{
+  content: "";
+  display: block;
+  width: 50px;
+  margin: 5px auto 0;
+  background-color: rgb(0, 131, 116);
+  height: 3px;
+  transition: 1s;
+}
+#about > p{
+  margin: 20px 0 40px;
+  text-align: center;
+}
+#about article{
+  display: flex;
+  justify-content: space-between;
+}
+#about article div:nth-child(1){
+  flex-basis: 46.5%;
+}
+#about article img{
+  width: 100%;
+  border-radius: 20px;
+}
+#about article div:nth-child(2){
+  flex-basis: 46.5%;
+}
+#about article li{
+  margin-bottom: 10px;
+}
+#about article li::before{
+  content: "\2705";
+  margin-right: 10px;
+}
+
+/*======== SUBSCRIBE =========*/
+#subscribe{
+  background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.505)), url(images/pexels-photo.jpeg) no-repeat center/cover;
+  margin: 50px auto;
+  width: 80%;
+  height: 500px;
+  border-radius: 20px;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  align-content: center;
+  color: white;
+}
+#subscribe p{
+   max-width: 80%;
+   text-align: center;
+}
+#subscribe div{
+   max-width: 80%;
+   display: flex;
+} 
+#subscribe input, #subscribe button{
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: none;
+}
+#subscribe input{
+  border-radius: 10px 0 0 10px;
+  padding-left: 8px;
+  outline: none;
+}
+#subscribe button{
+  background-color: rgb(0, 131, 116);
+  padding: 4px 10px;
+  text-transform: uppercase;
+  border-radius: 0 10px 10px 0;
+}
