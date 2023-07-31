@@ -10,7 +10,7 @@ The projects found here are categorized into two:
 The learning projects are the projects we built together to further increase their horizon and to give them the guide needed while starting or building a project.
 
 ### 2. FINAL PROJECTS
-The final projects are the projects built by the students at the end of their learning process.
+The final projects are the projects built by the students at the end of their learning process. To put into practice what they have learnt.
 
 
 ### TECHNOLOGIES / LANGUAGES
