@@ -18,6 +18,8 @@ The Students whose learning project are found here are:
 **5. James**
 **6. Chukwuowah Henry**
 **6. Somkene**
+**7. Umerah Favor Ifunanya**
+**7. Akachukwu Uwaoma**
 
 ## PROJECTS
 The student developed the following projects:
