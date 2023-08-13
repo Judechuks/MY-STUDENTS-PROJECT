@@ -20,6 +20,10 @@ The Students whose learning project are found here are:
 **6. Somkene**
 **7. Umerah Favor Ifunanya**
 **7. Akachukwu Uwaoma**
+**7. Salvation Chidera**
+**7. Chidera**
+**7. Ebube**
+**7. Kenechukwu**
 
 ## PROJECTS
 The student developed the following projects:
