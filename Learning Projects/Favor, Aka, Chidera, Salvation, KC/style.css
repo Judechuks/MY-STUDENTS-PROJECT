@@ -384,9 +384,6 @@ footer a{
 footer article:first-child{
   flex-basis: 40%;
 }
-footer article:first-child{
-  flex-basis: 40%;
-}
 footer article:first-child > p{
   margin-bottom: 20px;
   margin-top: 10px;
@@ -403,6 +400,7 @@ footer article:nth-child(2) li{
 footer > div{
   flex-basis: 100%;
   text-align: center;
+  margin-top: 30px;
 }
 footer .contact-subtitle{
   margin-bottom: 15px;
@@ -412,4 +410,40 @@ footer .address {
 }
 footer .phone{
   margin-bottom: 6px;
+}
+
+@media screen and (max-width: 1270px){
+  footer article:first-child {
+    flex-basis: 100%;
+  }
+  footer article:nth-child(2) {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 1090px){
+  #hero{
+    flex-direction: column;
+    gap: 60px;
+  }
+  #hero article{
+    text-align: center;
+  }
+  #hero .btn{
+    margin: auto;
+  }
+  #hero p{
+    max-width: 50%;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 1024px) {
+  section article{
+    flex-wrap: wrap
+    justify-content: center;
+  }
+
+  section article > div{
+    flex-basis: 60%;
+  }
 }
