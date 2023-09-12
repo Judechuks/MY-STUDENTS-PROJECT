@@ -20,10 +20,14 @@ The Students whose learning project are found here are:
 **6. Somkene**
 **7. Umerah Favor Ifunanya**
 **7. Akachukwu Uwaoma**
-**7. Salvation Chidera**
+**7. okafor Salvation Chidera**
 **7. Chidera**
 **7. Ebube**
 **7. Kenechukwu**
+**8. Onyekachi Mmesoma Sandra**
+**8. Nnabuife Steven**
+**9. Chukwujekwute Emmanuel**
+**9. Okafor Collins Mmaduabuchi**
 
 ## PROJECTS
 The student developed the following projects:
@@ -34,6 +38,9 @@ The student developed the following projects:
 ### 4. Product site
 ### 5. Transport site
 ### 6. Business Growth site
+### 7. Impact site
+### 8. Better Solution for Business site
+### 9. Jaytube only _(went back to school)_
 
 ## TECHNOLOGIES / LANGUAGES
 These projects were developed using 
