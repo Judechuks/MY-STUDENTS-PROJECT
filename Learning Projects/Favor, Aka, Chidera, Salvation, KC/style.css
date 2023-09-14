@@ -437,13 +437,36 @@ footer .phone{
     margin-inline: auto;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1026px) {
   section article{
-    flex-wrap: wrap
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   section article > div{
     flex-basis: 60%;
+  }
+  #about article{
+    flex-direction: column;
+  }
+  #about img {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  #contact .col {
+    flex-basis: 100%;
+  }
+  #contact .form-container {
+    flex-basis: 80%;
+  }
+}
+@media (max-width: 856px) {
+  footer article.footer-link{
+    display: grid;
+    justify-content: start;
+    gap: 50px;
+  }
+  #services, #testimonial{
+    padding-inline: 0;
   }
 }
