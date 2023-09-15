@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 a{
   text-decoration: none;
 }
@@ -66,6 +69,11 @@ header li::after{
 header li:hover::after{
   width: 100%;
 }
+header .fa-bars {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
 
 /*======== HERO =========*/
 #hero{
@@ -82,6 +90,9 @@ header li:hover::after{
   color: #ccc;
   margin: 30px 0;
   max-width: 80%;
+}
+#hero img{
+  width: 100%;
 }
 #hero .btn{
   border: 1px solid #aaa;
@@ -324,6 +335,7 @@ section > h1::after, #testimonial h1::after{
   flex-basis: 35%;
   background-color: rgb(6, 201, 178);
   padding-top: 15px;
+  width: 100%;
 }
 #contact .form-container{
   flex-basis: 65%;
@@ -468,5 +480,71 @@ footer .phone{
   }
   #services, #testimonial{
     padding-inline: 0;
+  }
+}
+@media (max-width: 777px){
+  header .fa-bars{
+    display: block;
+  }
+  header nav ul {
+    width: 60%;
+    height: 100vh;
+    background-color: rgb(0, 131, 116);
+    position: fixed;
+    right: -60%;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  header nav:hover ul{
+    right: 0;
+  }
+  header nav ul a{
+    font-size: 1.3rem;
+  }
+  header li{
+    width: fit-content;
+  }
+}
+@media (max-width: 667px){
+  #subscribe div{
+    flex-direction: column;
+  }
+  #subscribe input, #subscribe button{
+    border-radius: 0;
+    padding-block: 4px;
+  }
+}
+@media (max-width: 530px){
+  #about {
+    padding: 20px;
+  }
+  #subscribe{
+    width: 90%;
+  }
+  #services{
+    padding: 40px 20px;
+  } 
+  #services div, #testimonial div{
+    flex-basis: 90%;
+  }
+  #team article div{
+    flex-basis: 80%;
+  }
+  #contact, footer {
+    padding-inline: 20px;
+  }
+}
+@media (max-width: 300px){
+  #contact form{
+  padding: 20px 5px;
+  }
+  #contact .form-container {
+    flex-basis: 99%;
+  }
+  #contact .card{
+    flex-direction: column;
   }
 }
