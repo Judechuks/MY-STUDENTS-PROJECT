@@ -28,6 +28,8 @@ The Students whose learning project are found here are:
 **8. Nnabuife Steven**
 **9. Chukwujekwute Emmanuel**
 **9. Okafor Collins Mmaduabuchi**
+**10. Egenti Chukwudalu**
+**11. Fidelis Terdoo (Corper)**
 
 ## PROJECTS
 The student developed the following projects:
@@ -41,6 +43,8 @@ The student developed the following projects:
 ### 7. Impact site
 ### 8. Better Solution for Business site
 ### 9. Jaytube only _(went back to school)_
+### 10. Game warrior
+### 11. Nordlife finance
 
 ## TECHNOLOGIES / LANGUAGES
 These projects were developed using 
