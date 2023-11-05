@@ -61,12 +61,15 @@ body{
 
 /*========== HEADER ==========*/
 header{
+  width: 100%;
   background-color: var(--color-black);
   padding: 1.5rem 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--color-yellow);
+  position: relative;
+  z-index: 10;
 }
 nav{
   flex-basis: 66%;
@@ -89,7 +92,12 @@ nav li{
 .menu ul a:hover{
   color: var(--color-yellow);
 }
-
+.fa-bars{
+  color: var(--color-white);
+  font-size: 2rem;
+  position: relative;
+  display: none;
+}
 /*========== HERO ==========*/
 #hero{
   width: 100%;
@@ -112,6 +120,7 @@ nav li{
   top: -100px;
   left: 100px;
   color: white;
+  z-index: 3;
 }
 .slider-button{
   background-color: var(--color-white);
@@ -155,6 +164,7 @@ nav li{
   background-color:var(--color-black);
   color: var(--color-white);
   position: relative;
+  top: -24px;
   overflow: hidden;
 }
 .latest-news{
@@ -588,4 +598,176 @@ footer nav ul{
   100%{
     left: -800px;
   }
+}
+
+/*============= MEDIA QUERY =============*/
+@media (max-width: 1050px) {
+  #review{
+    background: transparent;
+  }
+}
+@media (max-width: 1025px) {
+  #tournament main{
+    justify-content: center;
+  }
+  #tournament .tournament{
+    width: fit-content;
+    margin: 0 auto;
+  } 
+  #tournament article{
+    flex-direction: column;
+    flex-basis: 40%;
+    height: 100%;
+  } 
+  #footer-top .col-1{
+    display: none;
+  }
+  footer{
+    flex-direction: column-reverse;
+  }
+  #categories{
+    grid-template-columns: 1fr 1fr;
+  }
+  #review main{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #review article{
+    flex-basis: 40%;
+  }
+}
+@media (max-width: 950px) {
+  nav{
+    flex-basis: fit-content;
+  }
+  header .menu{
+    position: fixed;
+    top: -500px;
+    left: 0;
+    height:fit-content ;
+    background-color: var(--color-black);
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    z-index: -1;
+    transition: 1s;
+  } 
+  nav:hover .menu{
+    top: 81px;
+    cursor: pointer;
+  }
+  .fa-bars{
+    display: block;
+    cursor: pointer;
+  }
+  header nav ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  header .btn{
+    margin-top: 20px;
+  }
+  #hero h1{
+    font-size: 2rem;
+  }
+  .info p{
+    width: 60%;
+  }
+  #recent main{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 842px){
+  #hero .info{
+    top: 25%;
+  }
+}
+@media (max-width: 830px){
+  .slider-image{
+    height: 70vh;
+  }
+  #tournament main{
+    flex-direction: column;
+  }
+  #tournament article{
+    width: 60%;
+    margin: auto;
+  }
+  #footer-top{
+    flex-direction: column;
+  }
+}
+@media (max-width: 695px){
+  .button-container{
+    top: -35px;
+  }
+}
+@media (max-width: 641px) {
+  #contact{
+    flex-direction: column;
+  }
+}
+@media (max-width: 580px) {
+  #hero .info{
+    left: 10px;
+  }
+  #hero .button-container{
+    left: 10px;
+  }
+  #categories{
+    grid-template-columns: 1fr;
+  }
+  #recent main{
+    grid-template-columns: 1fr;
+  }
+  #tournament article{
+    width: 90%;
+  }
+  #review article{
+    flex-basis: 90%;
+  }
+  #tournament, #categories, #recent, 
+  #review, #footer-top, footer{
+    padding-inline: 10px;
+  }
+}
+@media (max-width: 483px) {
+  #hero .info{
+    top: 35%;
+  }
+  #hero p, .info p{
+    max-width: 100%;
+  }
+  .info p{
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  header img{
+    width: 70%;
+  }
+  #hero .info{
+    top: 200px;
+    width: calc(100% - 10px);
+  }
+  .slider-image{
+    height: 65vh;
+  }
+  #contact{
+    padding-inline: 10px ;
+  }
+  footer{
+    text-align: center;
+  }
+}
+@media (max-width: 409px) {
+  #hero .info{
+    top: 25%;
+  }
+}
+@media (max-width: 380px) {
+  footer nav{
+    display: none;
+  }  
 }
