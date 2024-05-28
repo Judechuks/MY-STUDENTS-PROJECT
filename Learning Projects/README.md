@@ -30,6 +30,17 @@ The Students whose learning project are found here are:
 **9. Okafor Collins Mmaduabuchi**
 **10. Egenti Chukwudalu**
 **11. Fidelis Terdoo (Corper)**
+**12. Ikechukwu (A.K.A. Tacas)**
+**12. Ugwu Patrick**
+**12. Ugwu Charles**
+**12. Ndubuisi Emmanuel**
+**12. Chimaobi**
+**12. Sonia**
+**12. Onyi**
+**13. Chidera**
+**13. Chibueze Amanda**
+**13. Onovo Cynthia Chidimma**
+**13. Chukwudi Gabriel Nonso**
 
 ## PROJECTS
 The student developed the following projects:
@@ -45,6 +56,8 @@ The student developed the following projects:
 ### 9. Jaytube only _(went back to school)_
 ### 10. Game warrior
 ### 11. Nordlife finance
+### 12. Course Outline
+### 13. Curem4
 
 ## TECHNOLOGIES / LANGUAGES
 These projects were developed using 
