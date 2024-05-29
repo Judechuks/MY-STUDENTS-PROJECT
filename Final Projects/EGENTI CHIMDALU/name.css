@@ -1,0 +1,162 @@
+:root{
+    --color-orange: #E69C08;
+    --color-black:rgb(27, 26, 26);
+    --color-grey:rgb(128, 128, 128);
+    --color-white:white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#registration-form{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(yellow\ background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#registration-form h1{
+    font-size: 2.5rem;
+    color: var(--color-white);
+}
+#registration-form h3{
+    color:var(--color-orange) ;
+}
+#registration-form p{
+    margin-top: 20px;
+}
+.colss-2{
+    background-color: var(--color-grey);
+    border-radius: 20px;
+    padding: 20px;
+}
+.colss-2 input{
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--color-black);
+}
+.colss-2 button{
+    width: fit-content;
+}
+.sign{
+    padding-inline: 140px;
+    padding-block: 10px;
+    text-align: justify;
+    margin: 20px 0;
+    background-color: var(--color-orange);
+    border-radius: 20px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+.login{
+    padding-inline: 145px;
+}
+/* .submit{
+    padding-inline: 20px;
+    padding-block: 10;
+    border-radius: 5px;
+    background-color: var(--color-grey);
+    color: var(--color-white);
+} */
+.colss-2 a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+#forum{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(istockphoto-villa\ house.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 90px;
+}
+#forum .colss-3{
+    width: 40%;
+    background-color: var(--color-grey);
+    margin:0  auto;
+    padding-block: 30px;
+    padding-inline: 20px;
+    border-radius: 20px;
+    box-shadow: 5px -8px 20px 12px var(--color-black);
+}
+.colss-3 input{
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--color-black);
+}
+.colss-3 a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.colss-3 .login{
+    padding-inline: 30%;
+    border-radius: 10px;
+    background-color: var(--color-orange);
+}
+/* ------------------------------------media query------------------------------------ */
+/* ------------------------------------media query------------------------------------ */
+/* ------------------------------------media query------------------------------------ */
+/* ------------------media query 360------------------------------ */
+@media (max-width: 360px) {
+    #forum .colss-3{
+        width: 100%;
+    }
+    #registration-form{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(yellow\ background.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #registration-form h1{
+        font-size: 1rem;
+        color: var(--color-white);
+    }
+    #registration-form h3{
+        color:var(--color-orange) ;
+    }
+    #registration-form p{
+        margin-top: 20px;
+    }
+    .colss-2{
+        background-color: var(--color-grey);
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .colss-2 input{
+        margin-bottom: 15px;
+        border-radius: 20px;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid var(--color-black);
+    }
+    .colss-2 p{
+    /* font-size: .8rem; */
+    }
+    .colss-2 button{
+        width: fit-content;
+    }
+    .sign{
+        padding-inline: 10px;
+        padding-block: 5px;
+        text-align: justify;
+        margin: 20px 0;
+        background-color: var(--color-orange);
+        border-radius: 20px;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    .login{
+        padding-inline: 145px;
+    }
+}
